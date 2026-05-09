@@ -1,0 +1,186 @@
+:root {
+  --color-dark:    #1e3a5f;
+  --color-accent:  #f4a300;
+  --color-bg:      #f5f7fa;
+  --color-white:   #ffffff;
+  --color-text:    #333333;
+  --color-muted:   #666666;
+}
+
+.head {
+    background-color: black;
+    
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  text-align: center;
+  padding: 20px;
+}
+
+#course-title {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+main h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  text-align: center;
+  color: var(--color-dark);
+  margin-bottom: 30px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.card {
+  background-color: var(--color-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card h2 {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  padding: 14px 20px;
+  text-align: center;
+}
+
+.card p,
+.card ul {
+  padding: 0;
+  font-size: 0.95rem;
+}
+
+.about {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 20px;
+}
+
+.about img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--color-dark);
+  flex-shrink: 0;
+}
+
+.card figure {
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.card figcaption {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  font-style: italic;
+  margin-top: 6px;
+}
+
+.card ul {
+  list-style: disc;
+  padding: 16px 20px 16px 40px;
+}
+
+.card ul li {
+  margin-bottom: 8px;
+}
+
+.card ul a {
+  color: var(--color-dark);
+  text-decoration: underline;
+}
+
+.card ul a:hover {
+  color: var(--color-accent);
+}
+
+.card > p {
+  padding: 16px 20px 0;
+}
+
+footer {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 6px 0;
+}
+
+#lastModified {
+  color: var(--color-accent);
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  #course-title {
+    font-size: 1.3rem;
+  }
+
+  nav {
+    gap: 16px;
+  }
+}
