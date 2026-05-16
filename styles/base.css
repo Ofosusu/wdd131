@@ -1,19 +1,10 @@
 :root {
-  --color-dark:    #1e3a5f;
-  --color-accent:  #f4a300;
-  --color-bg:      #f5f7fa;
-  --color-white:   #ffffff;
-  --color-text:    #333333;
-  --color-muted:   #666666;
-}
-
-.head {
-    background-color: black;
-    text-align: center;
-    padding: 5px;
-    gap: 170px;
-
-    
+  --color-dark: #1e3a5f;
+  --color-accent: #f4a300;
+  --color-bg: #f5f7fa;
+  --color-white: #ffffff;
+  --color-text: #333333;
+  --color-muted: #666666;
 }
 
 * {
@@ -29,17 +20,22 @@ body {
   line-height: 1.6;
 }
 
-
+header {
+  text-align: center;
+}
 
 #course-title {
-  background-color: var(--color-dark);
   display: block;
+  background-color: var(--color-dark);
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
   color: var(--color-white);
-  margin-bottom: 0;
   padding: 20px;
-  text-align: center;
+}
+
+.head {
+  background-color: var(--color-text);
+  padding: 10px;
 }
 
 nav {
@@ -87,7 +83,7 @@ main h1 {
 .card {
   background-color: var(--color-white);
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(75, 4, 217, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
@@ -100,48 +96,50 @@ main h1 {
   text-align: center;
 }
 
-
 .card ul {
-  padding: 0;
   font-size: 0.95rem;
   margin-top: 80px;
   list-style: disc;
   padding: 16px 20px 16px 40px;
 }
 
+.card ul a {
+  color: var(--color-dark);
+  text-decoration: underline;
+}
+
+.card ul a:hover {
+  color: var(--color-accent);
+}
+
 .about {
   display: flex;
   flex-direction: row-reverse;
-  border-left: 20px;
+  gap: 30px;
+  padding: 16px 20px;
+}
+
+.about-one {
+  display: flex;
   gap: 30px;
   padding: 16px 20px;
 }
 
 .area {
   display: flex;
-  align-items: center;
   justify-content: center;
-  align-content: center;
-  border-bottom: 1px solid var(--color-muted);
-  padding-top: 10px;
+  align-items: center;
   width: 300px;
   margin-left: auto;
   margin-right: auto;
-  
-}
-
-.about-one {
-  display: flex;
-  border-left: 20px;
-  gap: 30px;
-  padding: 16px 20px;
+  padding-top: 10px;
+  border-bottom: 1px solid var(--color-muted);
 }
 
 .about img {
   width: 120px;
   height: 120px;
   object-fit: cover;
-  
   border: 3px solid var(--color-dark);
   flex-shrink: 0;
 }
@@ -158,22 +156,6 @@ main h1 {
   margin-top: 6px;
 }
 
-.card ul {
-  list-style: disc;
-  padding: 16px 20px 16px 40px;
-}
-
-
-.card ul a {
-  color: var(--color-dark);
-  text-decoration: underline;
-  color: blue;
-}
-
-.card ul a:hover {
-  color: var(--color-accent);
-}
-
 .card > p {
   padding: 16px 20px 0;
 }
@@ -184,7 +166,6 @@ footer {
   text-align: center;
   padding: 10px;
   font-size: 0.9rem;
-  margin: 0;
 }
 
 footer p {
@@ -195,7 +176,9 @@ footer p {
   color: var(--color-accent);
 }
 
+/* Responsive Design */
 
+@media screen and (max-width: 768px) {
 
   #course-title {
     font-size: 1.3rem;
@@ -204,3 +187,23 @@ footer p {
   nav {
     gap: 16px;
   }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about,
+  .about-one {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .area {
+    width: 100%;
+  }
+
+  .card ul {
+    margin-top: 20px;
+  }
+}
