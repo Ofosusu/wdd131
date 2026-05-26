@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tour Ghana Page By David Ofosu Amoah studying software development at BYU-Idaho">
+  <title>Tour Ghana</title>
+<link rel="stylesheet" href="styles/place.css">
+<script src="scripts/place.js" defer></script>
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Ghana</h1>
+  </header>
+
+  <main>
+
+
+    <section class="hero">
+
+      <picture>
+        <source media="(min-width: 800px)" srcset="images/ghana.webp">
+        <img src="images/ghana.webp" alt="Beautiful view of Ghana">
+      </picture>
+
+    </section>
+
+    
+    <section class="content">
+
+      <div class="card">
+        <h2>About Ghana</h2>
+
+        <p><strong>Capital:</strong> Accra</p>
+        <p><strong>Population:</strong> 34 Million</p>
+        <p><strong>Language:</strong> English</p>
+        <p><strong>Currency:</strong> Ghana Cedi</p>
+        <p><strong>Famous For:</strong> Culture, Gold, Cocoa, and Hospitality</p>
+
+      </div>
+
+      <div class="card weather">
+
+       <div class="weather-header">
+         <h2>Weather</h2>
+        <img src="images/weather.svg" alt="Ghana weather icon" class="weather-icon  ">
+       </div>
+
+        <p><strong>Temperature:</strong> <span id="temperature">8</span> °C</p>
+
+        <p><strong>Wind Speed:</strong> <span id="windspeed">12</span> km/h</p>
+
+        <p><strong>Conditions:</strong> Cloudy</p>
+
+        <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> | David Ofosu Amoah | Ghana
+    </p>
+
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>
