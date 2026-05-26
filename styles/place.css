@@ -20,7 +20,7 @@ body {
 }
 
 header {
-  background-color: var(--primary-color);
+  background-color: var(--text-color);
   color: var(--light-color);
   text-align: center;
   padding: 1rem;
@@ -51,10 +51,13 @@ header h1 {
   padding: 1rem;
 }
 
-.card {
-  background-color: var(--light-color);
-  padding: 1.5rem;
-  border-radius: 8px;
+.card::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: var(--text-color);
+  margin-top: 1rem;
+  border-radius: 2px;
 }
 
 .card h2 {
@@ -66,6 +69,7 @@ header h1 {
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding-bottom: 0.9%;
 
 }
 .weather-icon {
