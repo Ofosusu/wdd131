@@ -1,6 +1,7 @@
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
+    background-color: #f4f4f4;
 }
 
 header {
@@ -36,7 +37,6 @@ nav ul.open {
 nav a {
     text-decoration: none;
     color: white;
-    font-weight: 400;
 }
 
 nav a:hover {
@@ -59,22 +59,32 @@ main {
 
 h2 {
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 1.5rem;
 }
 
-figure {
+.gallery section {
+    background-color: #ffffff;
+    padding: 1rem;
     text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
 }
 
-img {
+.gallery img {
     width: 100%;
-    max-width: 300px;
     height: auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.gallery h3 {
+    margin-top: 0;
 }
 
 footer {
@@ -82,4 +92,5 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
+    margin-top: 2rem;
 }
