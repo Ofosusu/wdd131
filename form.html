@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <script defer src="scripts/form.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
+
+  <main>
+    <form action="review.html" method="get" id="reviewForm">
+
+      
+      <label for="product">Product Name</label>
+      <select id="product" name="product" required>
+        <option value="" disabled selected>Select a Product ...</option>
+      </select>
+
+      
+      <fieldset>
+        <legend>Overall Rating</legend>
+
+        <label>
+          <input type="radio" name="rating" value="1" required> ☆
+        </label>
+
+        <label>
+          <input type="radio" name="rating" value="2"> ☆☆
+        </label>
+
+        <label>
+          <input type="radio" name="rating" value="3"> ☆☆☆
+        </label>
+
+        <label>
+          <input type="radio" name="rating" value="4"> ☆☆☆☆
+        </label>
+
+        <label>
+          <input type="radio" name="rating" value="5"> ☆☆☆☆☆
+        </label>
+      </fieldset>
+
+      
+      <label for="date">Date of Installation</label>
+      <input type="date" id="date" name="date" required>
+
+      
+      <fieldset>
+        <legend>Useful Features</legend>
+
+        <label><input type="checkbox" name="features" value="design"> Design</label>
+        <label><input type="checkbox" name="features" value="battery"> Battery Life</label>
+        <label><input type="checkbox" name="features" value="performance"> Performance</label>
+        <label><input type="checkbox" name="features" value="price"> Price</label>
+      </fieldset>
+
+      
+      <label for="review">Written Review</label>
+      <textarea id="review" name="review" rows="5"></textarea>
+
+      
+      <label for="username">Your Name</label>
+      <input type="text" id="username" name="username">
+
+      
+      <input type="submit" value="Submit Review">
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 | WDD 131 Product Review Assignment</p>
+  </footer>
+</body>
+</html>
