@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit a product review by rating your experience, selecting features, and sharing written feedback.">
+  <meta name="author" content="Your Name Here">
   <title>Product Review Form</title>
   <link rel="stylesheet" href="styles/form.css">
   <script defer src="scripts/form.js"></script>
@@ -16,60 +18,61 @@
   <main>
     <form action="review.html" method="get" id="reviewForm">
 
-      
       <label for="product">Product Name</label>
       <select id="product" name="product" required>
         <option value="" disabled selected>Select a Product ...</option>
       </select>
 
-      
       <fieldset>
         <legend>Overall Rating</legend>
 
-        <label>
-          <input type="radio" name="rating" value="1" required> ☆
+        <label for="rating1">
+          <input type="radio" id="rating1" name="rating" value="1" required> ☆
         </label>
 
-        <label>
-          <input type="radio" name="rating" value="2"> ☆☆
+        <label for="rating2">
+          <input type="radio" id="rating2" name="rating" value="2" required> ☆☆
         </label>
 
-        <label>
-          <input type="radio" name="rating" value="3"> ☆☆☆
+        <label for="rating3">
+          <input type="radio" id="rating3" name="rating" value="3" required> ☆☆☆
         </label>
 
-        <label>
-          <input type="radio" name="rating" value="4"> ☆☆☆☆
+        <label for="rating4">
+          <input type="radio" id="rating4" name="rating" value="4" required> ☆☆☆☆
         </label>
 
-        <label>
-          <input type="radio" name="rating" value="5"> ☆☆☆☆☆
+        <label for="rating5">
+          <input type="radio" id="rating5" name="rating" value="5" required> ☆☆☆☆☆
         </label>
       </fieldset>
 
-      
       <label for="date">Date of Installation</label>
       <input type="date" id="date" name="date" required>
 
-      
       <fieldset>
         <legend>Useful Features</legend>
 
-        <label><input type="checkbox" name="features" value="design"> Design</label>
-        <label><input type="checkbox" name="features" value="battery"> Battery Life</label>
-        <label><input type="checkbox" name="features" value="performance"> Performance</label>
-        <label><input type="checkbox" name="features" value="price"> Price</label>
+        <label for="feat-design">
+          <input type="checkbox" id="feat-design" name="features" value="design"> Design
+        </label>
+        <label for="feat-battery">
+          <input type="checkbox" id="feat-battery" name="features" value="battery"> Battery Life
+        </label>
+        <label for="feat-performance">
+          <input type="checkbox" id="feat-performance" name="features" value="performance"> Performance
+        </label>
+        <label for="feat-price">
+          <input type="checkbox" id="feat-price" name="features" value="price"> Price
+        </label>
       </fieldset>
 
-      
       <label for="review">Written Review</label>
       <textarea id="review" name="review" rows="5"></textarea>
 
-      
       <label for="username">Your Name</label>
       <input type="text" id="username" name="username">
 
-      
       <input type="submit" value="Submit Review">
 
     </form>

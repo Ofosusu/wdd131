@@ -56,3 +56,13 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: #345b7a;
 }
+
+@media (max-width: 600px) {
+  main {
+    padding: 0.5rem;
+  }
+
+  input, select, textarea {
+    font-size: 1rem;
+  }
+}
