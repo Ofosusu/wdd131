@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+
+    <link rel="stylesheet" href="styles/tour.css">
+    <script src="scripts/tour.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Discover Ghana</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="planner.html">Travel Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Plan Your Visit</h2>
+
+    <p id="welcome-back"></p>
+
+    <form id="plannerForm">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="attraction">Favorite Attraction to Visit</label>
+
+        <select id="attraction">
+            <option>Cape Coast Castle</option>
+            <option>Kakum National Park</option>
+            <option>Wli Waterfalls</option>
+            <option>Mole National Park</option>
+            <option>Kwame Nkrumah Mausoleum</option>
+        </select>
+
+        <button type="submit">Save My Plan</button>
+
+    </form>
+
+    <p id="confirmation"></p>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Discover Ghana</p>
+    <a href="references.html">References</a>
+</footer>
+
+</body>
+</html>
