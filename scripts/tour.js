@@ -3,31 +3,31 @@ const attractions = [
         name: "Cape Coast Castle",
         region: "Central Region",
         category: "Historical",
-        imageUrl: "images/cape-coast-castle.jpg"
+        imageUrl: "images/cape_coast_castle.jpeg"
     },
     {
         name: "Kakum National Park",
         region: "Central Region",
         category: "Nature",
-        imageUrl: "images/kakum-national-park.jpg"
+        imageUrl: "images/kakum_national_park.jpeg"
     },
     {
         name: "Wli Waterfalls",
         region: "Volta Region",
         category: "Nature",
-        imageUrl: "images/wli-waterfalls.jpg"
+        imageUrl: "images/wli_water_falls.jpeg"
     },
     {
         name: "Mole National Park",
         region: "Savannah Region",
         category: "Wildlife",
-        imageUrl: "images/mole-national-park.jpg"
+        imageUrl: "images/mole_national_park.jpeg"
     },
     {
         name: "Kwame Nkrumah Mausoleum",
         region: "Greater Accra Region",
         category: "Historical",
-        imageUrl: "images/nkrumah-mausoleum.jpg"
+        imageUrl: "images/kwame_nkrumah_museum.jpeg"
     }
 ];
 
